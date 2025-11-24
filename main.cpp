@@ -56,7 +56,7 @@ class rede{
             valor_calculado = sigmoid(somatorio);
             vetor_saida[u].valor = valor_calculado;
             somatorio = 0;
-        }
+        }        
 }
 
 
