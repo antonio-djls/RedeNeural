@@ -1,4 +1,4 @@
-#define ll long long 
+#define ll long long
 #include<math.h>
 #include<iostream>
 #include<vector>
@@ -18,9 +18,8 @@
 
 
 
-
 class rede{
-    public:     
+    public:
     //     ll int camada_de_entrada{2073600};
     //     ll int camada_oculta{1290};
     //     ll int camada_de_saida{10};
@@ -29,12 +28,11 @@ class rede{
         std::vector<neuronio_oculto> vetor_oculto;
         std::vector<neuronio_saida> vetor_saida;
     // std::vector<ll double>
-    
+
     double sigmoid(double x){
         x = 1 / (1 + exp(-1 * x));
         return x;
     }
-    
 
     // Em andamento, calculado o valor depois da função de somatorio e função de ativação
     void ajuste_de_pesos(){
@@ -49,15 +47,21 @@ class rede{
         }
         for(int u = 0; u < sizeof(vetor_saida); u++){
             // Camada Oculta tem 1290 neurônios
-            
+
             for(int k = 0; k < sizeof(vetor_oculto); k++){
                 somatorio  += vetor_oculto[k].valor * vetor_oculto[k].array[u];
             }
             valor_calculado = sigmoid(somatorio);
             vetor_saida[u].valor = valor_calculado;
             somatorio = 0;
-        }        
-}
+        }
+    }   
+    // Setando o valor dos neurônios randomicamente
+    void setando_neuronios(){
+        srand(time(0));
+        // for(ll int k = 0; k < )
+
+    }
 
 
 };
@@ -65,9 +69,8 @@ class rede{
 int main(){
     // srand(time(NULL));
     // aletorio = rand() % 10 +1; doubleervalo entre 1 e 10
-    
-    rede r1;
 
+    rede r1;
 
     return 0;
 }
