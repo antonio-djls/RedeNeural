@@ -5,7 +5,7 @@
 #include<cstdlib>
 #include<new>
 #include"estruturas.h"
-
+#include<math.h>
 /*Tamanho da Camada Oculta
     2/3 da camada de entrada + Tamanho da camada de saída
     2/3* 2074600 + 10 = 1.382.410 neurônios
@@ -15,7 +15,6 @@
 */
 // double sigmoid()
 // double erro()
-
 
 
 class rede{
@@ -33,7 +32,6 @@ class rede{
         x = 1 / (1 + exp(-1 * x));
         return x;
     }
-
     // Em andamento, calculado o valor depois da função de somatorio e função de ativação
     void ajuste_de_pesos(){
         long double somatorio{};
@@ -55,7 +53,8 @@ class rede{
             vetor_saida[u].valor = valor_calculado;
             somatorio = 0;
         }
-    }   
+
+    }
     // Setando o valor dos neurônios randomicamente
     void setando_neuronios(){
         srand(time(0));
