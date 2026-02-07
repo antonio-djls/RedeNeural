@@ -1,6 +1,6 @@
 # Rede Neural MNIST em C++
 
-![](mnist.png)
+![](m.png)
 
 Implementação completa de uma rede neural artificial para reconhecimento de dígitos manuscritos do dataset MNIST.
 
