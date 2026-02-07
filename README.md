@@ -1,6 +1,6 @@
 # Rede Neural MNIST em C++
 
-![Exemplo MNIST](mnist.png)
+![](mnist.png)
 
 Implementação completa de uma rede neural artificial para reconhecimento de dígitos manuscritos do dataset MNIST.
 
@@ -12,47 +12,17 @@ Link: <https://github.com/wichtounet/mnist>
 Classificar imagens de dígitos manuscritos (0-9) com alta acurácia usando uma rede neural feedforward com backpropagation.
 
 ## 🏗️ Arquitetura da Rede
-
 ```
 Entrada (784) → Oculta 1 (256) → Oculta 2 (128) → Saída (10)
      ↓              ↓               ↓              ↓
   28×28 pixels   Sigmoid        Sigmoid       Sigmoid
 ```
-
 - **Camada de entrada**: 784 neurônios (28×28 pixels)
 - **Camada oculta 1**: 256 neurônios com bias
 - **Camada oculta 2**: 128 neurônios com bias  
 - **Camada de saída**: 10 neurônios (um para cada dígito)
 
-## 🚀 Funcionalidades Implementadas
-
-### ✅ Core Features
-
-- **Feed Forward**: Propagação direta com ativação sigmoid
-- **Backpropagation**: Algoritmo de retropropagação completo
-- **SGD com Momentum**: Otimizador com taxa de aprendizado adaptativa
-- **Bias Treináveis**: Termos de bias para cada neurônio
-
-### ✅ Otimizações
-
-- **Inicialização Xavier**: Pesos aleatórios com distribuição adequada
-- **Normalização [-1,1]**: Melhor processamento dos pixels
-- **Momentum (0.9)**: Convergência mais rápida e estável
-- **Batch Training**: Processamento em lotes de 1000 imagens
-
 ### ✅ Dataset MNIST
-
-## 👨‍💻 Autor
-
-Implementação educacional completa em C++ puro para demonstrar os fundamentos de redes neurais artificiais aplicadas ao reconhecimento de padrões.
-
-## 👨‍💻 Autor
-
-Implementação educacional completa em C++ puro para demonstrar os fundamentos de redes neurais artificiais aplicadas ao reconhecimento de padrões.
-
-- **Carregamento completo**: 60.000 imagens de treino, 10.000 de teste
-- **Formato IDX**: Leitura binária dos arquivos oficiais
-- **One-hot encoding**: Conversão dos labels para vetores
 
 ### ✅ Avaliação e Testes
 
@@ -76,4 +46,3 @@ Probabilidades: [0.03, 0.00, 0.00, 0.06, 0.00, 0.02, 0.00, 0.98, 0.01, 0.03]
 - `neuronio_camadaoculta_*`: Neurônios das camadas ocultas
 - `neuronio_saida`: Neurônios da camada de saída
 - `MNIST_Image/Label`: Estruturas para o dataset
-
