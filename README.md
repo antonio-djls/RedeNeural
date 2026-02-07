@@ -32,12 +32,10 @@ Entrada (784) → Oculta 1 (256) → Oculta 2 (128) → Saída (10)
 - **Visualização de resultados**: ✓ CORRETO / ✗ ERRADO
 
 ### Exemplo de Saída
-
 ```
 Valor real: 7 | Predição: 7 | ✓ CORRETO
 Probabilidades: [0.03, 0.00, 0.00, 0.06, 0.00, 0.02, 0.00, 0.98, 0.01, 0.03]
 ```
-
 ## 🔧 Componentes Técnicos
 
 ### Estruturas de Dados
