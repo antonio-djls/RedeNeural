@@ -1,4 +1,4 @@
-# Rede Neural MNIST em C++
+# Rede Neural em C++ (MNIST)
 
 ![Exemplo MNIST](mnist.png)
 
